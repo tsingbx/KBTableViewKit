@@ -19,6 +19,12 @@
 		A20E1ED01FE3C4F200736BA5 /* KBTableModelNotifyProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A20E1EC11FE3C4F200736BA5 /* KBTableModelNotifyProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A20E1ED11FE3C4F200736BA5 /* KBTableModelProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A20E1EC21FE3C4F200736BA5 /* KBTableModelProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A20E1ED21FE3C4F200736BA5 /* KBCollectionTableModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A20E1EC31FE3C4F200736BA5 /* KBCollectionTableModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A25DE585218806780062F536 /* KBRootTableCellEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE57F218806780062F536 /* KBRootTableCellEntity.h */; };
+		A25DE586218806780062F536 /* KBItemEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A25DE580218806780062F536 /* KBItemEntity.m */; };
+		A25DE587218806780062F536 /* KBTableViewCellEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A25DE581218806780062F536 /* KBTableViewCellEntity.m */; };
+		A25DE588218806780062F536 /* KBRootTableCellEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A25DE582218806780062F536 /* KBRootTableCellEntity.m */; };
+		A25DE589218806780062F536 /* KBTableViewCellEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE583218806780062F536 /* KBTableViewCellEntity.h */; };
+		A25DE58A218806780062F536 /* KBItemEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE584218806780062F536 /* KBItemEntity.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,12 @@
 		A20E1EC11FE3C4F200736BA5 /* KBTableModelNotifyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBTableModelNotifyProtocol.h; sourceTree = "<group>"; };
 		A20E1EC21FE3C4F200736BA5 /* KBTableModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBTableModelProtocol.h; sourceTree = "<group>"; };
 		A20E1EC31FE3C4F200736BA5 /* KBCollectionTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBCollectionTableModel.h; sourceTree = "<group>"; };
+		A25DE57F218806780062F536 /* KBRootTableCellEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBRootTableCellEntity.h; sourceTree = "<group>"; };
+		A25DE580218806780062F536 /* KBItemEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBItemEntity.m; sourceTree = "<group>"; };
+		A25DE581218806780062F536 /* KBTableViewCellEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBTableViewCellEntity.m; sourceTree = "<group>"; };
+		A25DE582218806780062F536 /* KBRootTableCellEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRootTableCellEntity.m; sourceTree = "<group>"; };
+		A25DE583218806780062F536 /* KBTableViewCellEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBTableViewCellEntity.h; sourceTree = "<group>"; };
+		A25DE584218806780062F536 /* KBItemEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBItemEntity.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,7 @@
 		A20E1EAC1FE3C4C100736BA5 /* KBTableViewKit */ = {
 			isa = PBXGroup;
 			children = (
+				A25DE57E218806780062F536 /* KBTableCellEntity */,
 				A20E1EB51FE3C4F200736BA5 /* KBTableModel */,
 				A20E1EAD1FE3C4C200736BA5 /* KBTableViewKit.h */,
 				A20E1EAE1FE3C4C200736BA5 /* Info.plist */,
@@ -101,6 +114,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A25DE57E218806780062F536 /* KBTableCellEntity */ = {
+			isa = PBXGroup;
+			children = (
+				A25DE57F218806780062F536 /* KBRootTableCellEntity.h */,
+				A25DE580218806780062F536 /* KBItemEntity.m */,
+				A25DE581218806780062F536 /* KBTableViewCellEntity.m */,
+				A25DE582218806780062F536 /* KBRootTableCellEntity.m */,
+				A25DE583218806780062F536 /* KBTableViewCellEntity.h */,
+				A25DE584218806780062F536 /* KBItemEntity.h */,
+			);
+			path = KBTableCellEntity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -108,9 +134,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25DE585218806780062F536 /* KBRootTableCellEntity.h in Headers */,
 				A20E1ECC1FE3C4F200736BA5 /* KBGroupTableModel.h in Headers */,
 				A20E1EAF1FE3C4C200736BA5 /* KBTableViewKit.h in Headers */,
+				A25DE58A218806780062F536 /* KBItemEntity.h in Headers */,
 				A20E1ECB1FE3C4F200736BA5 /* KBTableModelEventListener.h in Headers */,
+				A25DE589218806780062F536 /* KBTableViewCellEntity.h in Headers */,
 				A20E1ED21FE3C4F200736BA5 /* KBCollectionTableModel.h in Headers */,
 				A20E1ECD1FE3C4F200736BA5 /* KBTableModelEvent.h in Headers */,
 				A20E1ED11FE3C4F200736BA5 /* KBTableModelProtocol.h in Headers */,
@@ -188,9 +217,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20E1EC51FE3C4F200736BA5 /* KBTableModelEvent.m in Sources */,
+				A25DE586218806780062F536 /* KBItemEntity.m in Sources */,
 				A20E1EC61FE3C4F200736BA5 /* KBGroupTableModel.m in Sources */,
+				A25DE587218806780062F536 /* KBTableViewCellEntity.m in Sources */,
 				A20E1ECE1FE3C4F200736BA5 /* KBTableModelNotify.m in Sources */,
 				A20E1ECA1FE3C4F200736BA5 /* KBCollectionTableModel.m in Sources */,
+				A25DE588218806780062F536 /* KBRootTableCellEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
