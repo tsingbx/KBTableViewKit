@@ -1,0 +1,9 @@
+{
+  "commitish" : "v1.1.0",
+  "iOS" : [
+    {
+      "name" : "Masonry",
+      "hash" : "2ccfc37e4a241e300c71d6f85921d91b8d3a599abbd564670effdfc2da2590d5"
+    }
+  ]
+}

@@ -25,6 +25,13 @@
 		A25DE588218806780062F536 /* KBRootTableCellEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A25DE582218806780062F536 /* KBRootTableCellEntity.m */; };
 		A25DE589218806780062F536 /* KBTableViewCellEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE583218806780062F536 /* KBTableViewCellEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A25DE58A218806780062F536 /* KBItemEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE584218806780062F536 /* KBItemEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A25DE5C921880D8A0062F536 /* KBRootSelectableTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE5C321880D8A0062F536 /* KBRootSelectableTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A25DE5CA21880D8A0062F536 /* KBTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE5C421880D8A0062F536 /* KBTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A25DE5CB21880D8A0062F536 /* KBRootTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE5C521880D8A0062F536 /* KBRootTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A25DE5CC21880D8A0062F536 /* KBRootTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A25DE5C621880D8A0062F536 /* KBRootTableCell.m */; };
+		A25DE5CD21880D8A0062F536 /* KBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A25DE5C721880D8A0062F536 /* KBTableViewCell.m */; };
+		A25DE5CE21880D8A0062F536 /* KBRootSelectableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A25DE5C821880D8A0062F536 /* KBRootSelectableTableViewCell.m */; };
+		A25DE5D121880DD50062F536 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25DE5D021880DD50062F536 /* Masonry.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +55,13 @@
 		A25DE582218806780062F536 /* KBRootTableCellEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRootTableCellEntity.m; sourceTree = "<group>"; };
 		A25DE583218806780062F536 /* KBTableViewCellEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBTableViewCellEntity.h; sourceTree = "<group>"; };
 		A25DE584218806780062F536 /* KBItemEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBItemEntity.h; sourceTree = "<group>"; };
+		A25DE5C321880D8A0062F536 /* KBRootSelectableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBRootSelectableTableViewCell.h; sourceTree = "<group>"; };
+		A25DE5C421880D8A0062F536 /* KBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBTableViewCell.h; sourceTree = "<group>"; };
+		A25DE5C521880D8A0062F536 /* KBRootTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBRootTableCell.h; sourceTree = "<group>"; };
+		A25DE5C621880D8A0062F536 /* KBRootTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRootTableCell.m; sourceTree = "<group>"; };
+		A25DE5C721880D8A0062F536 /* KBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBTableViewCell.m; sourceTree = "<group>"; };
+		A25DE5C821880D8A0062F536 /* KBRootSelectableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRootSelectableTableViewCell.m; sourceTree = "<group>"; };
+		A25DE5D021880DD50062F536 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = Carthage/Build/iOS/Masonry.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25DE5D121880DD50062F536 /* Masonry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,7 @@
 		A20E1EAC1FE3C4C100736BA5 /* KBTableViewKit */ = {
 			isa = PBXGroup;
 			children = (
+				A25DE5C221880D8A0062F536 /* KBRootTableCell */,
 				A25DE57E218806780062F536 /* KBTableCellEntity */,
 				A20E1EB51FE3C4F200736BA5 /* KBTableModel */,
 				A20E1EAD1FE3C4C200736BA5 /* KBTableViewKit.h */,
@@ -110,6 +126,7 @@
 		A20E1EEC1FE3CADA00736BA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A25DE5D021880DD50062F536 /* Masonry.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,6 +144,19 @@
 			path = KBTableCellEntity;
 			sourceTree = "<group>";
 		};
+		A25DE5C221880D8A0062F536 /* KBRootTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				A25DE5C321880D8A0062F536 /* KBRootSelectableTableViewCell.h */,
+				A25DE5C421880D8A0062F536 /* KBTableViewCell.h */,
+				A25DE5C521880D8A0062F536 /* KBRootTableCell.h */,
+				A25DE5C621880D8A0062F536 /* KBRootTableCell.m */,
+				A25DE5C721880D8A0062F536 /* KBTableViewCell.m */,
+				A25DE5C821880D8A0062F536 /* KBRootSelectableTableViewCell.m */,
+			);
+			path = KBRootTableCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -142,6 +172,9 @@
 				A25DE58A218806780062F536 /* KBItemEntity.h in Headers */,
 				A25DE589218806780062F536 /* KBTableViewCellEntity.h in Headers */,
 				A20E1ECD1FE3C4F200736BA5 /* KBTableModelEvent.h in Headers */,
+				A25DE5CB21880D8A0062F536 /* KBRootTableCell.h in Headers */,
+				A25DE5CA21880D8A0062F536 /* KBTableViewCell.h in Headers */,
+				A25DE5C921880D8A0062F536 /* KBRootSelectableTableViewCell.h in Headers */,
 				A20E1ED11FE3C4F200736BA5 /* KBTableModelProtocol.h in Headers */,
 				A20E1EC81FE3C4F200736BA5 /* KBTableModelNotify.h in Headers */,
 				A20E1ED01FE3C4F200736BA5 /* KBTableModelNotifyProtocol.h in Headers */,
@@ -159,6 +192,7 @@
 				A20E1EA61FE3C4C100736BA5 /* Frameworks */,
 				A20E1EA71FE3C4C100736BA5 /* Headers */,
 				A20E1EA81FE3C4C100736BA5 /* Resources */,
+				A25DE5CF21880DA10062F536 /* carthage copy frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,6 +245,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A25DE5CF21880DA10062F536 /* carthage copy frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Masonry.framework",
+			);
+			name = "carthage copy frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A20E1EA51FE3C4C100736BA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -218,9 +274,12 @@
 			files = (
 				A20E1EC51FE3C4F200736BA5 /* KBTableModelEvent.m in Sources */,
 				A25DE586218806780062F536 /* KBItemEntity.m in Sources */,
+				A25DE5CE21880D8A0062F536 /* KBRootSelectableTableViewCell.m in Sources */,
 				A20E1EC61FE3C4F200736BA5 /* KBGroupTableModel.m in Sources */,
+				A25DE5CD21880D8A0062F536 /* KBTableViewCell.m in Sources */,
 				A25DE587218806780062F536 /* KBTableViewCellEntity.m in Sources */,
 				A20E1ECE1FE3C4F200736BA5 /* KBTableModelNotify.m in Sources */,
+				A25DE5CC21880D8A0062F536 /* KBRootTableCell.m in Sources */,
 				A20E1ECA1FE3C4F200736BA5 /* KBCollectionTableModel.m in Sources */,
 				A25DE588218806780062F536 /* KBRootTableCellEntity.m in Sources */,
 			);
@@ -355,7 +414,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = ../WeiSh/Carthage/Build/iOS;
+				FRAMEWORK_SEARCH_PATHS = (
+					../WeiSh/Carthage/Build/iOS,
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KBTableViewKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -379,7 +441,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = ../WeiSh/Carthage/Build/iOS;
+				FRAMEWORK_SEARCH_PATHS = (
+					../WeiSh/Carthage/Build/iOS,
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = KBTableViewKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
