@@ -32,6 +32,11 @@
 		A25DE5CD21880D8A0062F536 /* KBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A25DE5C721880D8A0062F536 /* KBTableViewCell.m */; };
 		A25DE5CE21880D8A0062F536 /* KBRootSelectableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A25DE5C821880D8A0062F536 /* KBRootSelectableTableViewCell.m */; };
 		A25DE5D121880DD50062F536 /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25DE5D021880DD50062F536 /* Masonry.framework */; };
+		A25DE62B218825B00062F536 /* KBTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A25DE627218825B00062F536 /* KBTableCell.m */; };
+		A25DE62C218825B00062F536 /* KBSelectableTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE628218825B00062F536 /* KBSelectableTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A25DE62D218825B00062F536 /* KBSelectableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A25DE629218825B00062F536 /* KBSelectableTableViewCell.m */; };
+		A25DE62E218825B00062F536 /* KBTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE62A218825B00062F536 /* KBTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A25DE632218829050062F536 /* YYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25DE631218829050062F536 /* YYKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +67,12 @@
 		A25DE5C721880D8A0062F536 /* KBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBTableViewCell.m; sourceTree = "<group>"; };
 		A25DE5C821880D8A0062F536 /* KBRootSelectableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRootSelectableTableViewCell.m; sourceTree = "<group>"; };
 		A25DE5D021880DD50062F536 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = Carthage/Build/iOS/Masonry.framework; sourceTree = "<group>"; };
+		A25DE627218825B00062F536 /* KBTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBTableCell.m; sourceTree = "<group>"; };
+		A25DE628218825B00062F536 /* KBSelectableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBSelectableTableViewCell.h; sourceTree = "<group>"; };
+		A25DE629218825B00062F536 /* KBSelectableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBSelectableTableViewCell.m; sourceTree = "<group>"; };
+		A25DE62A218825B00062F536 /* KBTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBTableCell.h; sourceTree = "<group>"; };
+		A25DE62F218828090062F536 /* YYWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYWebImage.framework; path = Carthage/Build/iOS/YYWebImage.framework; sourceTree = "<group>"; };
+		A25DE631218829050062F536 /* YYKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYKit.framework; path = Carthage/Build/iOS/YYKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25DE632218829050062F536 /* YYKit.framework in Frameworks */,
 				A25DE5D121880DD50062F536 /* Masonry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +108,7 @@
 		A20E1EAC1FE3C4C100736BA5 /* KBTableViewKit */ = {
 			isa = PBXGroup;
 			children = (
+				A25DE626218825B00062F536 /* KBTableCell */,
 				A25DE5C221880D8A0062F536 /* KBRootTableCell */,
 				A25DE57E218806780062F536 /* KBTableCellEntity */,
 				A20E1EB51FE3C4F200736BA5 /* KBTableModel */,
@@ -126,6 +139,8 @@
 		A20E1EEC1FE3CADA00736BA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A25DE631218829050062F536 /* YYKit.framework */,
+				A25DE62F218828090062F536 /* YYWebImage.framework */,
 				A25DE5D021880DD50062F536 /* Masonry.framework */,
 			);
 			name = Frameworks;
@@ -157,6 +172,17 @@
 			path = KBRootTableCell;
 			sourceTree = "<group>";
 		};
+		A25DE626218825B00062F536 /* KBTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				A25DE627218825B00062F536 /* KBTableCell.m */,
+				A25DE628218825B00062F536 /* KBSelectableTableViewCell.h */,
+				A25DE629218825B00062F536 /* KBSelectableTableViewCell.m */,
+				A25DE62A218825B00062F536 /* KBTableCell.h */,
+			);
+			path = KBTableCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -175,7 +201,9 @@
 				A25DE5CB21880D8A0062F536 /* KBRootTableCell.h in Headers */,
 				A25DE5CA21880D8A0062F536 /* KBTableViewCell.h in Headers */,
 				A25DE5C921880D8A0062F536 /* KBRootSelectableTableViewCell.h in Headers */,
+				A25DE62E218825B00062F536 /* KBTableCell.h in Headers */,
 				A20E1ED11FE3C4F200736BA5 /* KBTableModelProtocol.h in Headers */,
+				A25DE62C218825B00062F536 /* KBSelectableTableViewCell.h in Headers */,
 				A20E1EC81FE3C4F200736BA5 /* KBTableModelNotify.h in Headers */,
 				A20E1ED01FE3C4F200736BA5 /* KBTableModelNotifyProtocol.h in Headers */,
 			);
@@ -255,6 +283,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Masonry.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/YYKit.framework",
 			);
 			name = "carthage copy frameworks";
 			outputFileListPaths = (
@@ -273,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20E1EC51FE3C4F200736BA5 /* KBTableModelEvent.m in Sources */,
+				A25DE62B218825B00062F536 /* KBTableCell.m in Sources */,
 				A25DE586218806780062F536 /* KBItemEntity.m in Sources */,
 				A25DE5CE21880D8A0062F536 /* KBRootSelectableTableViewCell.m in Sources */,
 				A20E1EC61FE3C4F200736BA5 /* KBGroupTableModel.m in Sources */,
@@ -281,6 +311,7 @@
 				A20E1ECE1FE3C4F200736BA5 /* KBTableModelNotify.m in Sources */,
 				A25DE5CC21880D8A0062F536 /* KBRootTableCell.m in Sources */,
 				A20E1ECA1FE3C4F200736BA5 /* KBCollectionTableModel.m in Sources */,
+				A25DE62D218825B00062F536 /* KBSelectableTableViewCell.m in Sources */,
 				A25DE588218806780062F536 /* KBRootTableCellEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

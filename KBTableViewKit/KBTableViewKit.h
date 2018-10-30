@@ -27,5 +27,7 @@ FOUNDATION_EXPORT const unsigned char KBTableViewKitVersionString[];
 #import <KBTableViewKit/KBTableViewCell.h>
 #import <KBTableViewKit/KBRootTableCell.h>
 #import <KBTableViewKit/KBRootSelectableTableViewCell.h>
+#import <KBTableViewKit/KBTableCell.h>
+#import <KBTableViewKit/KBSelectableTableViewCell.h>
 
 
