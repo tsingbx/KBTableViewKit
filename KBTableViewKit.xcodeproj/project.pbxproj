@@ -25,12 +25,6 @@
 		A20E1EE91FE3CA4300736BA5 /* KBRootTableCellEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A20E1EDF1FE3CA4300736BA5 /* KBRootTableCellEntity.m */; };
 		A20E1EEA1FE3CA4300736BA5 /* KBTableViewCellEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = A20E1EE01FE3CA4300736BA5 /* KBTableViewCellEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A20E1EEB1FE3CA4300736BA5 /* KBItemEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = A20E1EE11FE3CA4300736BA5 /* KBItemEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A212C3C81FE77323006C7196 /* KBRootTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A212C3C61FE77323006C7196 /* KBRootTableCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A212C3C91FE77323006C7196 /* KBRootTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A212C3C71FE77323006C7196 /* KBRootTableCell.m */; };
-		A212C3CC1FE77352006C7196 /* KBTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A212C3CA1FE77352006C7196 /* KBTableViewCell.m */; };
-		A212C3CD1FE77352006C7196 /* KBTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A212C3CB1FE77352006C7196 /* KBTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A21A3C4B1FE8ABCE0089D2E9 /* KBRootSelectableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A21A3C491FE8ABCE0089D2E9 /* KBRootSelectableTableViewCell.m */; };
-		A21A3C4C1FE8ABCE0089D2E9 /* KBRootSelectableTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A21A3C4A1FE8ABCE0089D2E9 /* KBRootSelectableTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,15 +48,6 @@
 		A20E1EDF1FE3CA4300736BA5 /* KBRootTableCellEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRootTableCellEntity.m; sourceTree = "<group>"; };
 		A20E1EE01FE3CA4300736BA5 /* KBTableViewCellEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBTableViewCellEntity.h; sourceTree = "<group>"; };
 		A20E1EE11FE3CA4300736BA5 /* KBItemEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBItemEntity.h; sourceTree = "<group>"; };
-		A20E1EED1FE3CADB00736BA5 /* YYKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YYKit.framework; path = ../WeiSh/Carthage/Build/iOS/YYKit.framework; sourceTree = "<group>"; };
-		A20E1EFC1FE3D17C00736BA5 /* PackageApplication */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; name = PackageApplication; path = ../WeiSh/PackageApplication; sourceTree = "<group>"; };
-		A212C3C61FE77323006C7196 /* KBRootTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBRootTableCell.h; sourceTree = "<group>"; };
-		A212C3C71FE77323006C7196 /* KBRootTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRootTableCell.m; sourceTree = "<group>"; };
-		A212C3CA1FE77352006C7196 /* KBTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBTableViewCell.m; sourceTree = "<group>"; };
-		A212C3CB1FE77352006C7196 /* KBTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBTableViewCell.h; sourceTree = "<group>"; };
-		A212C3CE1FE77444006C7196 /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = ../WeiSh/Carthage/Build/iOS/Masonry.framework; sourceTree = "<group>"; };
-		A21A3C491FE8ABCE0089D2E9 /* KBRootSelectableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRootSelectableTableViewCell.m; sourceTree = "<group>"; };
-		A21A3C4A1FE8ABCE0089D2E9 /* KBRootSelectableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBRootSelectableTableViewCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +81,6 @@
 		A20E1EAC1FE3C4C100736BA5 /* KBTableViewKit */ = {
 			isa = PBXGroup;
 			children = (
-				A212C3C51FE77323006C7196 /* KBRootTableCell */,
 				A20E1EDB1FE3CA4300736BA5 /* KBTableCellEntity */,
 				A20E1EB51FE3C4F200736BA5 /* KBTableModel */,
 				A20E1EAD1FE3C4C200736BA5 /* KBTableViewKit.h */,
@@ -139,24 +123,8 @@
 		A20E1EEC1FE3CADA00736BA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A212C3CE1FE77444006C7196 /* Masonry.framework */,
-				A20E1EFC1FE3D17C00736BA5 /* PackageApplication */,
-				A20E1EED1FE3CADB00736BA5 /* YYKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A212C3C51FE77323006C7196 /* KBRootTableCell */ = {
-			isa = PBXGroup;
-			children = (
-				A21A3C4A1FE8ABCE0089D2E9 /* KBRootSelectableTableViewCell.h */,
-				A21A3C491FE8ABCE0089D2E9 /* KBRootSelectableTableViewCell.m */,
-				A212C3CB1FE77352006C7196 /* KBTableViewCell.h */,
-				A212C3CA1FE77352006C7196 /* KBTableViewCell.m */,
-				A212C3C61FE77323006C7196 /* KBRootTableCell.h */,
-				A212C3C71FE77323006C7196 /* KBRootTableCell.m */,
-			);
-			path = KBRootTableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,9 +143,6 @@
 				A20E1ED21FE3C4F200736BA5 /* KBCollectionTableModel.h in Headers */,
 				A20E1ECD1FE3C4F200736BA5 /* KBTableModelEvent.h in Headers */,
 				A20E1ED11FE3C4F200736BA5 /* KBTableModelProtocol.h in Headers */,
-				A212C3C81FE77323006C7196 /* KBRootTableCell.h in Headers */,
-				A21A3C4C1FE8ABCE0089D2E9 /* KBRootSelectableTableViewCell.h in Headers */,
-				A212C3CD1FE77352006C7196 /* KBTableViewCell.h in Headers */,
 				A20E1EC81FE3C4F200736BA5 /* KBTableModelNotify.h in Headers */,
 				A20E1ED01FE3C4F200736BA5 /* KBTableModelNotifyProtocol.h in Headers */,
 			);
@@ -194,7 +159,6 @@
 				A20E1EA61FE3C4C100736BA5 /* Frameworks */,
 				A20E1EA71FE3C4C100736BA5 /* Headers */,
 				A20E1EA81FE3C4C100736BA5 /* Resources */,
-				A20E1EF31FE3CC5700736BA5 /* CopyToFrameworks */,
 			);
 			buildRules = (
 			);
@@ -247,35 +211,15 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		A20E1EF31FE3CC5700736BA5 /* CopyToFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = CopyToFrameworks;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "../CopyFramework.sh $FULL_PRODUCT_NAME";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		A20E1EA51FE3C4C100736BA5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A20E1EC51FE3C4F200736BA5 /* KBTableModelEvent.m in Sources */,
-				A212C3C91FE77323006C7196 /* KBRootTableCell.m in Sources */,
 				A20E1EE91FE3CA4300736BA5 /* KBRootTableCellEntity.m in Sources */,
 				A20E1EE71FE3CA4300736BA5 /* KBItemEntity.m in Sources */,
-				A212C3CC1FE77352006C7196 /* KBTableViewCell.m in Sources */,
 				A20E1EE81FE3CA4300736BA5 /* KBTableViewCellEntity.m in Sources */,
-				A21A3C4B1FE8ABCE0089D2E9 /* KBRootSelectableTableViewCell.m in Sources */,
 				A20E1EC61FE3C4F200736BA5 /* KBGroupTableModel.m in Sources */,
 				A20E1ECE1FE3C4F200736BA5 /* KBTableModelNotify.m in Sources */,
 				A20E1ECA1FE3C4F200736BA5 /* KBCollectionTableModel.m in Sources */,
