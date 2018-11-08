@@ -1,9 +1,9 @@
 //
 //  KBRootTableCellEntity.h
-//  WeiSh
+
 //
 //  Created by xulingjiao on 2017/8/10.
-//  Copyright © 2017年 Kuaibao. All rights reserved.
+
 //
 
 #import <Foundation/Foundation.h>

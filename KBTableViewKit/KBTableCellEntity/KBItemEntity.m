@@ -1,9 +1,9 @@
 //
 //  KBItemEntity.m
-//  WeiSh
+
 //
 //  Created by xulingjiao on 2017/9/13.
-//  Copyright © 2017年 Kuaibao. All rights reserved.
+
 //
 
 #import "KBItemEntity.h"

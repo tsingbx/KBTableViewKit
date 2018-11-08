@@ -1,9 +1,9 @@
 //
 //  KBRootTableCell.h
-//  WeiSh
+
 //
 //  Created by xulingjiao on 2017/12/18.
-//  Copyright © 2017年 Kuaibao. All rights reserved.
+
 //
 
 #import "KBTableViewCellEntity.h"

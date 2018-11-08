@@ -3,7 +3,7 @@
 //  KBTableViewKit
 //
 //  Created by xulingjiao on 2017/12/15.
-//  Copyright © 2017年 Kuaibao. All rights reserved.
+
 //
 
 #import <UIKit/UIKit.h>

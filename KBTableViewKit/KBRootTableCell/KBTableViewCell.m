@@ -1,9 +1,8 @@
 //
 //  KBTableViewCell.m
-//  KuaiDiYuan_S
+
 //
 //  Created by xulingjiao on 15/5/18.
-//  Copyright (c) 2015年 KuaidiHelp. All rights reserved.
 //
 
 #import "KBTableViewCell.h"
