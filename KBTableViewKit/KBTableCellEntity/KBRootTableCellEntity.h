@@ -52,4 +52,6 @@
 
 @end
 
+#define kCellNameId(cellEntity) [[[(cellEntity) performSelector:@selector(cellNameId)] safeCastToString] integerValue]
+
 
