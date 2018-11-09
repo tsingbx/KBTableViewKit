@@ -52,6 +52,12 @@
 
 @end
 
-#define kCellNameId(cellEntity) [[[(cellEntity) performSelector:@selector(cellNameId)] safeCastToString] integerValue]
+#define kCellNameId(rootEntity) [[(id)(rootEntity) safeCastForClass:[KBRootTableCellEntity class]] cellNameId]
 
+#define kCellGroupId(rootEntity) [[(id)(rootEntity) safeCastForClass:[KBRootTableCellEntity class]] cellGroupId]
 
+#define kCellStyle(rootEntity) [[(id)(rootEntity) safeCastForClass:[KBRootTableCellEntity class]] cellStyle]
+
+#define kCellSelected(rootEntity) [[(id)(rootEntity) safeCastForClass:[KBRootTableCellEntity class]] selected]
+
+#define kCellReuseIdentifier(rootEntity) [[(id)(rootEntity) safeCastForClass:[KBRootTableCellEntity class]] reuseIdentifier]
