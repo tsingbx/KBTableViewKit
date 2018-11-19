@@ -220,7 +220,6 @@
 				A20E1EA61FE3C4C100736BA5 /* Frameworks */,
 				A20E1EA71FE3C4C100736BA5 /* Headers */,
 				A20E1EA81FE3C4C100736BA5 /* Resources */,
-				A25DE5CF21880DA10062F536 /* carthage copy frameworks */,
 			);
 			buildRules = (
 			);
@@ -272,29 +271,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A25DE5CF21880DA10062F536 /* carthage copy frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Masonry.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/YYKit.framework",
-			);
-			name = "carthage copy frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A20E1EA51FE3C4C100736BA5 /* Sources */ = {
