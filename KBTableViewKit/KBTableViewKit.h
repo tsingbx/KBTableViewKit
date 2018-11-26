@@ -24,10 +24,3 @@ FOUNDATION_EXPORT const unsigned char KBTableViewKitVersionString[];
 #import <KBTableViewKit/KBTableModelEvent.h>
 #import <KBTableViewKit/KBTableModelNotifyProtocol.h>
 #import <KBTableViewKit/KBCollectionTableModel.h>
-#import <KBTableViewKit/KBTableViewCell.h>
-#import <KBTableViewKit/KBRootTableCell.h>
-#import <KBTableViewKit/KBRootSelectableTableViewCell.h>
-#import <KBTableViewKit/KBTableCell.h>
-#import <KBTableViewKit/KBSelectableTableViewCell.h>
-
-
