@@ -12,8 +12,6 @@
 
 @property (nonatomic, strong) NSMutableArray *mutableObjects;
 
-@property (nonatomic, strong) NSString *keyPath;
-
 @end
 
 @implementation KBCollectionTableModel
@@ -22,7 +20,6 @@
     self = [super init];
     if (self) {
         _mutableObjects = [NSMutableArray array];
-        _keyPath = @"";
     }
     return self;
 }
@@ -32,7 +29,6 @@
     if (self) {
         objects = (objects != nil ? objects : @[]);
         _mutableObjects = [objects mutableCopy];
-        _keyPath = @"";
     }
     return self;
 }
@@ -43,7 +39,6 @@
     if (self) {
         objects = (objects != nil ? objects : @[]);
         _mutableObjects = [objects mutableCopy];
-        _keyPath = keyPath;
     }
     return self;
 }
@@ -79,16 +74,23 @@
 - (NSIndexPath *)indexPathOfGroupId:(NSInteger)groupId nameId:(NSInteger)nameId {
     for (NSInteger row = 0; row < self.mutableObjects.count; ++row) {
         id entity = self.mutableObjects[row];
-        id cellGroupIdValue = [entity valueForKeyPath:@"cellGroupId"];
-        id cellNameIdValue = [entity valueForKeyPath:@"cellNameId"];
-        if (cellGroupIdValue && cellNameIdValue) {
-            NSString *cellGroupIdValueString = [cellGroupIdValue description];
-            NSString *cellNameIdValueString = [cellNameIdValue description];
-            NSInteger entityGroupId = [cellGroupIdValueString integerValue];
-            NSInteger entityNameId = [cellNameIdValueString integerValue];
-            if (entityGroupId == groupId && entityNameId == nameId) {
-                return [NSIndexPath indexPathForRow:row
-                                          inSection:0];
+        id cellGroupIdValue = nil;
+        id cellNameIdValue = nil;
+        @try {
+            cellGroupIdValue = [entity valueForKeyPath:@"cellGroupId"];
+            cellNameIdValue = [entity valueForKeyPath:@"cellNameId"];
+        } @catch (NSException *exception) {
+            
+        } @finally {
+            if (cellGroupIdValue && cellNameIdValue) {
+                NSString *cellGroupIdValueString = [cellGroupIdValue description];
+                NSString *cellNameIdValueString = [cellNameIdValue description];
+                NSInteger entityGroupId = [cellGroupIdValueString integerValue];
+                NSInteger entityNameId = [cellNameIdValueString integerValue];
+                if (entityGroupId == groupId && entityNameId == nameId) {
+                    return [NSIndexPath indexPathForRow:row
+                                              inSection:0];
+                }
             }
         }
     }

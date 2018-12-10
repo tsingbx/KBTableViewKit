@@ -12,11 +12,6 @@
 
 @interface KBCollectionTableModel : KBTableModelNotify<KBTableModelProtocol>
 
-@property (nonatomic, strong, readonly) NSString *keyPath;
-
 - (instancetype)initWithObjects:(NSArray *)objects;
-
-- (instancetype)initWithObjects:(NSArray *)objects
-                        keyPath:(NSString *)keyPath;
 
 @end
