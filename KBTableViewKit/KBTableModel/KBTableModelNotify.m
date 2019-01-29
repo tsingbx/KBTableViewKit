@@ -5,7 +5,7 @@
 //  Created by xulingjiao on 2017/8/8.
 
 //
-
+#import "NSMutableArray+WeakReferences.h"
 #import "KBTableModelEventListener.h"
 #import "KBTableModelNotify.h"
 
@@ -20,7 +20,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _eventListeners = [NSMutableArray array];
+        _eventListeners = [NSMutableArray mutableArrayUsingWeakReferencesWithCapacity:1];
     }
     return self;
 }

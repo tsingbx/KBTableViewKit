@@ -25,6 +25,8 @@
 		A25DE588218806780062F536 /* KBRootTableCellEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A25DE582218806780062F536 /* KBRootTableCellEntity.m */; };
 		A25DE589218806780062F536 /* KBTableViewCellEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE583218806780062F536 /* KBTableViewCellEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A25DE58A218806780062F536 /* KBItemEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE584218806780062F536 /* KBItemEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A261E98F220010C4009C5709 /* NSMutableArray+WeakReferences.m in Sources */ = {isa = PBXBuildFile; fileRef = A261E98D220010C4009C5709 /* NSMutableArray+WeakReferences.m */; };
+		A261E990220010C4009C5709 /* NSMutableArray+WeakReferences.h in Headers */ = {isa = PBXBuildFile; fileRef = A261E98E220010C4009C5709 /* NSMutableArray+WeakReferences.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		A25DE582218806780062F536 /* KBRootTableCellEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBRootTableCellEntity.m; sourceTree = "<group>"; };
 		A25DE583218806780062F536 /* KBTableViewCellEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBTableViewCellEntity.h; sourceTree = "<group>"; };
 		A25DE584218806780062F536 /* KBItemEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBItemEntity.h; sourceTree = "<group>"; };
+		A261E98D220010C4009C5709 /* NSMutableArray+WeakReferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+WeakReferences.m"; sourceTree = "<group>"; };
+		A261E98E220010C4009C5709 /* NSMutableArray+WeakReferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+WeakReferences.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		A20E1EAC1FE3C4C100736BA5 /* KBTableViewKit */ = {
 			isa = PBXGroup;
 			children = (
+				A261E98C220010C4009C5709 /* NSMutableArray+WeakReferences */,
 				A25DE57E218806780062F536 /* KBTableCellEntity */,
 				A20E1EB51FE3C4F200736BA5 /* KBTableModel */,
 				A20E1EAD1FE3C4C200736BA5 /* KBTableViewKit.h */,
@@ -127,6 +132,15 @@
 			path = KBTableCellEntity;
 			sourceTree = "<group>";
 		};
+		A261E98C220010C4009C5709 /* NSMutableArray+WeakReferences */ = {
+			isa = PBXGroup;
+			children = (
+				A261E98D220010C4009C5709 /* NSMutableArray+WeakReferences.m */,
+				A261E98E220010C4009C5709 /* NSMutableArray+WeakReferences.h */,
+			);
+			path = "NSMutableArray+WeakReferences";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -142,6 +156,7 @@
 				A25DE58A218806780062F536 /* KBItemEntity.h in Headers */,
 				A25DE589218806780062F536 /* KBTableViewCellEntity.h in Headers */,
 				A20E1ECD1FE3C4F200736BA5 /* KBTableModelEvent.h in Headers */,
+				A261E990220010C4009C5709 /* NSMutableArray+WeakReferences.h in Headers */,
 				A20E1ED11FE3C4F200736BA5 /* KBTableModelProtocol.h in Headers */,
 				A20E1EC81FE3C4F200736BA5 /* KBTableModelNotify.h in Headers */,
 				A20E1ED01FE3C4F200736BA5 /* KBTableModelNotifyProtocol.h in Headers */,
@@ -217,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A20E1EC51FE3C4F200736BA5 /* KBTableModelEvent.m in Sources */,
+				A261E98F220010C4009C5709 /* NSMutableArray+WeakReferences.m in Sources */,
 				A25DE586218806780062F536 /* KBItemEntity.m in Sources */,
 				A20E1EC61FE3C4F200736BA5 /* KBGroupTableModel.m in Sources */,
 				A25DE587218806780062F536 /* KBTableViewCellEntity.m in Sources */,
