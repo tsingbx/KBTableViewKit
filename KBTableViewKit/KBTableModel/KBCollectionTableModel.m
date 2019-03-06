@@ -48,7 +48,9 @@
 }
 
 - (NSInteger)numberOfSections {
-    return 1;
+    if (_mutableObjects.count)
+        return 1;
+    return 0;
 }
 
 - (NSInteger)numberOfRowsInSection:(NSInteger)section {
