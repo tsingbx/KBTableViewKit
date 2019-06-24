@@ -124,15 +124,10 @@
 }
 
 - (void)addObjectsFromArray:(NSArray *)objects {
-    [self notifyListeners:[KBTableModelEvent beginUpdates:self]];
     for (id obj in objects) {
         [_mutableObjects addObject:obj];
-        NSInteger indexOfNewObject = [_mutableObjects indexOfObject:obj];
-        [self notifyListeners:[KBTableModelEvent insertionAtRow:indexOfNewObject
-                                                        section:0
-                                                     tableModel:self]];
     }
-    [self notifyListeners:[KBTableModelEvent endUpdates:self]];
+    [self notifyListeners:[KBTableModelEvent reloadData:self]];
 }
 
 - (void)addObject:(id)anObject {
