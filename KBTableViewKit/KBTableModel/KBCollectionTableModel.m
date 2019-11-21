@@ -76,20 +76,16 @@
 - (NSIndexPath *)indexPathOfGroupId:(NSInteger)groupId nameId:(NSInteger)nameId {
     for (NSInteger row = 0; row < self.mutableObjects.count; ++row) {
         id entity = self.mutableObjects[row];
-        id cellGroupIdValue = nil;
         id cellNameIdValue = nil;
         @try {
-            cellGroupIdValue = [entity valueForKeyPath:@"cellGroupId"];
             cellNameIdValue = [entity valueForKeyPath:@"cellNameId"];
         } @catch (NSException *exception) {
             
         } @finally {
-            if (cellGroupIdValue && cellNameIdValue) {
-                NSString *cellGroupIdValueString = [cellGroupIdValue description];
+            if (cellNameIdValue) {
                 NSString *cellNameIdValueString = [cellNameIdValue description];
-                NSInteger entityGroupId = [cellGroupIdValueString integerValue];
                 NSInteger entityNameId = [cellNameIdValueString integerValue];
-                if (entityGroupId == groupId && entityNameId == nameId) {
+                if (entityNameId == nameId) {
                     return [NSIndexPath indexPathForRow:row
                                               inSection:0];
                 }

@@ -11,8 +11,9 @@
 
 @interface KBGroupTableModel : KBTableModelNotify<KBTableModelProtocol>
 
-- (instancetype)initWithObjects:(NSArray *)objects
-                        keyPath:(NSString *)keyPath
+- (instancetype)initWithObjects:(NSArray<KBRootTableCellEntity *> *)objects
                 sortDescriptors:(NSArray<NSSortDescriptor *>*)sortDescriptors;
+
+- (instancetype)initWithObjects:(NSArray<KBRootTableCellEntity *> *)objects;
 
 @end

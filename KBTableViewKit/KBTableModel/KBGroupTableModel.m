@@ -5,7 +5,7 @@
 //  Created by xulingjiao on 2017/8/8.
 
 //
-
+#import "KBRootTableCellEntity.h"
 #import "KBGroupTableModel.h"
 
 @interface KBGroupTableModel()
@@ -32,6 +32,41 @@
         _sortDescriptors = sortDescriptors;
         if (_sortDescriptors.count <= 0)
             _sortDescriptors = @[[[NSSortDescriptor alloc] initWithKey:keyPath ascending:YES]];
+        [self updateTableModelList:objects];
+    }
+    return self;
+}
+
+- (instancetype)initWithObjects:(NSArray<KBRootTableCellEntity *> *)objects
+                sortDescriptors:(NSArray<NSSortDescriptor *>*)sortDescriptors {
+    self = [super init];
+    if (self) {
+        objects = (objects == nil ? @[] : objects);
+        _keyPath = @"cellGroupId";
+        NSSortDescriptor *sortByCellGroupId = [[NSSortDescriptor alloc] initWithKey:@"cellGroupId"
+                                                                          ascending:YES];
+        NSSortDescriptor *sortByCellNameId = [[NSSortDescriptor alloc] initWithKey:@"cellNameId"
+                                                                         ascending:YES];
+        NSMutableArray *allSortDescriptors = [[NSMutableArray alloc] initWithCapacity:10];
+        [allSortDescriptors addObjectsFromArray:@[sortByCellGroupId, sortByCellNameId]];
+        if (sortDescriptors.count > 0)
+            [allSortDescriptors addObjectsFromArray:sortDescriptors];
+        _sortDescriptors = [allSortDescriptors copy];
+        [self updateTableModelList:objects];
+    }
+    return self;
+}
+
+- (instancetype)initWithObjects:(NSArray<KBRootTableCellEntity *> *)objects {
+    self = [super init];
+    if (self) {
+        objects = (objects == nil ? @[] : objects);
+        _keyPath = @"cellGroupId";
+        NSSortDescriptor *sortByCellGroupId = [[NSSortDescriptor alloc] initWithKey:@"cellGroupId"
+                                                                          ascending:YES];
+        NSSortDescriptor *sortByCellNameId = [[NSSortDescriptor alloc] initWithKey:@"cellNameId"
+                                                                         ascending:YES];
+        _sortDescriptors = @[sortByCellGroupId, sortByCellNameId];
         [self updateTableModelList:objects];
     }
     return self;
