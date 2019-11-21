@@ -45,10 +45,13 @@
         _keyPath = @"cellGroupId";
         NSSortDescriptor *sortByCellGroupId = [[NSSortDescriptor alloc] initWithKey:@"cellGroupId"
                                                                           ascending:YES];
-        NSSortDescriptor *sortByCellNameId = [[NSSortDescriptor alloc] initWithKey:@"cellNameId"
-                                                                         ascending:YES];
-        NSMutableArray *allSortDescriptors = [[NSMutableArray alloc] initWithCapacity:10];
-        [allSortDescriptors addObjectsFromArray:@[sortByCellGroupId, sortByCellNameId]];
+        if (sortDescriptors == nil) {
+            NSSortDescriptor *sortByCellNameId = [[NSSortDescriptor alloc] initWithKey:@"cellNameId"
+                                                                             ascending:YES];
+            sortDescriptors = @[sortByCellNameId];
+        }
+        NSMutableArray *allSortDescriptors = [[NSMutableArray alloc] initWithCapacity:sortDescriptors.count+1];
+        [allSortDescriptors addObjectsFromArray:@[sortByCellGroupId]];
         if (sortDescriptors.count > 0)
             [allSortDescriptors addObjectsFromArray:sortDescriptors];
         _sortDescriptors = [allSortDescriptors copy];
@@ -64,9 +67,7 @@
         _keyPath = @"cellGroupId";
         NSSortDescriptor *sortByCellGroupId = [[NSSortDescriptor alloc] initWithKey:@"cellGroupId"
                                                                           ascending:YES];
-        NSSortDescriptor *sortByCellNameId = [[NSSortDescriptor alloc] initWithKey:@"cellNameId"
-                                                                         ascending:YES];
-        _sortDescriptors = @[sortByCellGroupId, sortByCellNameId];
+        _sortDescriptors = @[sortByCellGroupId];
         [self updateTableModelList:objects];
     }
     return self;
